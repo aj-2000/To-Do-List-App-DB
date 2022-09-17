@@ -138,7 +138,7 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-let port = 27017;
+let port = process.env.PORT || 3000;
 
 
 
