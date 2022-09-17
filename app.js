@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-angela:Test123@cluster0.2rgtn.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://root:hackonroot@cluster0.nz2mi.mongodb.net/smarttaskdb?retryWrites=true&w=majority");
 
 const itemsSchema={
   name:String
